@@ -11,7 +11,7 @@ export class RealtimeRelay {
   listen(port) {
     this.wss = new WebSocketServer({ port });
     this.wss.on('connection', this.connectionHandler.bind(this));
-    this.log(`Listening on ws://localhost:${port}`);
+    this.log(`Listening on https://tale.0scar.no:${port}`);
   }
 
   async connectionHandler(ws, req) {
