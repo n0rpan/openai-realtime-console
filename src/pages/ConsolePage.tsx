@@ -5,8 +5,8 @@
  *
  * Simply switch the lines by commenting one and removing the other
  */
-// const USE_LOCAL_RELAY_SERVER_URL: string | undefined = 'http://localhost:8081';
-const USE_LOCAL_RELAY_SERVER_URL: string | undefined = void 0;
+ const USE_LOCAL_RELAY_SERVER_URL: string | undefined = 'https://tale.0scar.no';
+// const USE_LOCAL_RELAY_SERVER_URL: string | undefined = void 0;
 
 import { useEffect, useRef, useCallback, useState } from 'react';
 
@@ -181,7 +181,7 @@ export function ConsolePage() {
     client.sendUserMessageContent([
       {
         type: `input_text`,
-        text: `Hello!`,
+        text: `Hei og velkommen til DNB, hvordan kan jeg hjelpe deg?`,
         // text: `For testing purposes, I want you to list ten car brands. Number each item, e.g. "one (or whatever number you are one): the item name".`
       },
     ]);
